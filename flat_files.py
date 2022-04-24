@@ -4,7 +4,7 @@ import pandas
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, __version__
 import os
 
-def insert_flatefile_azure(file_name, source_name, table_name, cursor, file_format='CSV', in_type='bulk'):
+def insert_flatfile_azure(file_name, source_name, table_name, cursor, file_format='CSV', in_type='bulk'):
     if in_type.lower() = 'bulk'
         try:
             sql_query = f"""BULK INSERT {table_name}
