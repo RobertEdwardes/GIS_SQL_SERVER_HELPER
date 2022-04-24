@@ -30,5 +30,6 @@ def df_to_NODEDGE(df, node_id, edge_id, *edge_values, *node_values):
     NODE = df[nv]
     ev = edge_values.append(edge_id)
     EDGE = df[ev]
-    NODE = NODE.to_json(orient="index")
-    EDGE = EDGE.to_json(orient="index")
+    NODE = NODE.to_json(orient="records")
+    EDGE = EDGE.to_json(orient="records")
+    
